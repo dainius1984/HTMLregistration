@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<header>
+		<h2>Welcome to the register page</h2>
+	</header>
+
+	<nav>
+		<a href="index.html"><h2>Go Back</h2></a>
+	</nav>
+
+	<p><h3>Register page</h3></p>
+
+	<!-- Use GET, no POST -->
+	<form method="GET">
+		First name:<input type="text" name="firstname"><br>
+		Last name:<input type="text" name="lastname"><br>
+		Email: <input type="Email" name="email" required><br>
+		Password: <input type="Password" min="5" name="password"><br>
+		Birthday: <input type="date" name="birthday"><br>
+		<strong>Gender:</strong><br> 
+		<input type="radio" name="gender" value="Male">Male<br>
+		<input type="radio" name="gender" value="Female">Female<br>
+		<input type="radio" name="gender" value="Other">Other<br>
+		<strong>Pets:</strong> <br>
+		<input type="checkbox" name="Pets" value="Cat">Cat<br>
+		<input type="checkbox" name="Pets" value="Dog">Dog<br>
+		<input type="checkbox" name="Pets" value="Parrot">Parrot<br>
+		<strong>Cars (multiple select):</strong><br>
+		<select multiple name="Cars">
+			<option value="Audi" name="audi">Audi</option>
+			<option value="Vw" name="Vw">Vw</option>
+			<option value="Citroen" name="citroen">Citroen</option>
+		</select><br>
+		<strong>Cars (single select):</strong><br>
+		<select name="Cars">
+			<option value="Audi">Audi</option>
+			<option value="Vw">Vw</option>
+			<option value="Citroen">Citroen</option>
+		</select><br>
+		<input type="submit" value="Register">
+		<input type="Reset" name="">
+
+	</form>
+
+	<footer>First html learn</footer>
+</body>
+</html>
